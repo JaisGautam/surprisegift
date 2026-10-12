@@ -846,8 +846,8 @@ const Home = () => {
         </p>
 
         <p className="text-xs text-gray-400 mt-3 font-sans">
-          Kya aapne aaj apne un khas insaan se baat ki? Unhe batayein ki wo
-          aapke liye kitne kimti hain...
+          क्या अपने आज उन खास इंसान से बात की ? उन्हे बताएँ की वो आपके लिए कितने
+          कीमती हैं॥
         </p>
       </div>
 
