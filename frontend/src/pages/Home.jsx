@@ -447,10 +447,45 @@ const Home = () => {
   const navigate = useNavigate();
 
   // Dynamic Deep Emotional Quotes List
+  // const emotionalQuotes = [
+  //   "Kuch log hamari zindagi mein itne khaas hote hain ki unke hone se hi sab khoobsurat lagta hai... Par hum aksar unhe yeh batana bhool jaate hain.",
+  //   "Waqt tezi se nikal raha hai... Kisi ke chehre par ek sachhi muskaan laane ka mauka baar-baar nahi milta.",
+  //   "Rishte sirf chalte nahi, unhe mehsoos karana padta hai. Aaj ek chhota sa gesture unke poore din ko khas bana sakta hai.",
+  // ];
+
+  // frontend/src/data/emotionalQuotes.js
+
   const emotionalQuotes = [
-    "Kuch log hamari zindagi mein itne khaas hote hain ki unke hone se hi sab khoobsurat lagta hai... Par hum aksar unhe yeh batana bhool jaate hain.",
-    "Waqt tezi se nikal raha hai... Kisi ke chehre par ek sachhi muskaan laane ka mauka baar-baar nahi milta.",
-    "Rishte sirf chalte nahi, unhe mehsoos karana padta hai. Aaj ek chhota sa gesture unke poore din ko khas bana sakta hai.",
+    {
+      id: 1,
+      quote:
+        "जिंदगी में कुछ लोग ऐसे होते हैं, जिनके होने मात्र से ही दिल को सुकून मिल जाता है... आज उन्हें बताइए कि वो आपके लिए कितने ख़ास हैं।",
+      tagline: "✨ हर ख़ास इंसान के लिए",
+    },
+    {
+      id: 2,
+      quote:
+        "बात महँगे या सस्ते की नहीं है... बात तो उस एहसास की है, जो बताता है कि दूर रहकर भी कोई आपका कितना ख़याल रखता है।",
+      tagline: "❤️ अहसास जो दिल को छु ले",
+    },
+    {
+      id: 3,
+      quote:
+        "जो बिना वजह आपकी फ़िक्र करते हैं, आपके हर सुख-दुख में खामोशी से साथ खड़े रहते हैं... उनके चेहरे पर एक छोटी सी मुस्कान लाना तो बनता है।",
+      tagline: "🎁 अपनों की अनमोल मुस्कान",
+    },
+    {
+      id: 4,
+      quote:
+        "वक्त के साथ सब बदल जाता है, लेकिन कुछ लोगों का दिया हुआ प्यार और साथ ताउम्र दिल में ज़िंदा रहता है।",
+      tagline: "🌟 ताउम्र की ख़ूबसूरत यादें",
+    },
+    {
+      id: 5,
+      quote:
+        "कभी-कभी लफ़्ज़ों में शुक्रगुज़ार होना मुश्किल होता है... पर एक प्यारा सा सरप्राइज बिना कुछ कहे दिल की हर बात बयां कर देता है।",
+      tagline: "बयानों से परे प्यार",
+    },
   ];
 
   const [currentQuoteIndex, setCurrentQuoteIndex] = useState(0);
