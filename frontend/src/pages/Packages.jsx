@@ -152,7 +152,7 @@ const Packages = () => {
     {
       id: "home-pkg",
       name: "Home Budget Package",
-      price: "₹499",
+      price: "₹1",
       relationTarget: "all",
       img: "https://images.unsplash.com/photo-1513885535751-8b9238bd482a?q=80&w=600&auto=format&fit=crop",
       items: ["Cute Greeting Card", "Scented Candle", "Fairy Lights Box"],

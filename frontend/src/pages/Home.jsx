@@ -864,8 +864,10 @@ const Home = () => {
             </span>
           </h1>
           <p className="text-gray-300 mb-6 text-sm md:text-base">
-            Har rishte ke liye ek yaadgaar surprise package. Budget chaho jo bhi
-            ho, emotions hamesha 100% pure honge.
+            {/* Har rishte ke liye ek yaadgaar surprise package. Budget chaho jo bhi
+            ho, emotions hamesha 100% pure honge. */}
+            हर रिश्ते के लिए एक यादगार Surprise Package. Budget चाहे जितना भी हो
+            Emotions हमेशा 100% शुद्ध होंगे
           </p>
           <button
             onClick={() => navigate("/packages")}
