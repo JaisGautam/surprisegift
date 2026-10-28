@@ -1,0 +1,25 @@
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+backend/.env
+frontend/.env
+frontend/.env.local
+backend/.env.local
+
+# Dependencies and build output
+node_modules/
+**/node_modules/
+frontend/dist/
+dist/
+coverage/
+cypress/videos/
+cypress/screenshots/
+
+# Logs and OS/editor files
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

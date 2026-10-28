@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #0a050a;
+  color: #f3f4f6;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+.glass-panel {
+  background: rgba(20, 10, 20, 0.65);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 42, 133, 0.15);
+}
+
+.glass-panel-glow {
+  background: rgba(20, 10, 20, 0.75);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 42, 133, 0.3);
+  box-shadow: 0 0 25px rgba(255, 42, 133, 0.15);
+}
