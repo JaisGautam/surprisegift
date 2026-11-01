@@ -42,6 +42,9 @@
 
 // module.exports = app;
 
+const Razorpay = require("razorpay");
+const crypto = require("crypto");
+
 const express = require("express");
 const cors = require("cors");
 const helmet = require("helmet");
@@ -63,7 +66,8 @@ app.use(
   cors({
     origin(origin, callback) {
       // Allow server-to-server requests and same-origin calls with no Origin header.
-      if (!origin || allowedOrigins.includes(origin)) return callback(null, true);
+      if (!origin || allowedOrigins.includes(origin))
+        return callback(null, true);
       return callback(new Error("Origin not allowed by CORS"));
     },
     credentials: true,
@@ -106,5 +110,7 @@ app.get("/health", (req, res) =>
 );
 
 app.use(errorHandler);
+// CORS ko pehle hi handle kar liya hai, par extra safety ke liye
+app.options("*", cors());
 
 module.exports = app;
