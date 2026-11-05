@@ -103,6 +103,7 @@ import { AdminDashboard } from "./pages/AdminDashboard";
 import { Login } from "./pages/Login";
 import { ProtectedRoute } from "./components/ProtectedRoute";
 
+// 🔥 Yahan 'export default' laga hua hai
 export default function App() {
   return (
     <AuthProvider>
@@ -145,5 +146,3 @@ export default function App() {
     </AuthProvider>
   );
 }
-
-export default App;
