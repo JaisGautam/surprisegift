@@ -33,7 +33,9 @@ export default function App() {
       <CartProvider>
         <Router>
           <Layout>
-            <div className="min-h-screen flex flex-col justify-between">
+            {/* <div className="min-h-screen flex flex-col justify-between"> */}
+
+            <div className="min-h-screen flex flex-col justify-between bg-gray-50 text-gray-900">
               <Navbar />
               <main className="flex-grow">
                 <Routes>

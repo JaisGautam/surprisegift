@@ -3040,7 +3040,7 @@ const Checkout = () => {
   }
 
   return (
-    <div className="min-h-screen bg-[#0f0f1a] text-white p-4 py-10 flex justify-center items-center">
+    <div className="min-h-screen bg-white p-4 py-10 flex justify-center items-center">
       <div className="w-full max-w-4xl grid md:grid-cols-2 gap-8">
         <div className="bg-[#1a1a2e] border border-gray-800 p-6 md:p-8 rounded-2xl shadow-xl">
           <h2 className="text-2xl font-bold mb-6">Delivery Details</h2>

@@ -7,7 +7,7 @@ const ContactUs = () => {
       <h1 className="text-3xl font-black text-white mb-6 text-center">
         Contact Us
       </h1>
-      <p className="text-center mb-10">
+      <p className="text-center mb-10 text-black">
         We'd love to hear from you! Get in touch with us for any queries or
         special requests.
       </p>

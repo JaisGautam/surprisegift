@@ -2662,12 +2662,12 @@ const Home = () => {
 
   // 🔥 2. Hero Banner Slider (Har 3 second mein change)
   const heroImages = [
-    "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?q=80&w=1200",
-    "https://images.unsplash.com/photo-1513885535751-8b9238bd482a?q=80&w=1200",
-    "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=1200",
-    "https://images.unsplash.com/photo-1512909006721-3d6018887383?q=80&w=1200",
-    "https://images.unsplash.com/photo-1559454403-b8fb88521f11?q=80&w=1200",
-    "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=1200",
+    "images/img1.png",
+    "images/img2.png",
+    "images/img3.png",
+    "images/img5.png",
+    "images/img6.jpg",
+    "images/img7.jpg",
   ];
   const [currentHeroIndex, setCurrentHeroIndex] = useState(0);
 
@@ -2690,12 +2690,12 @@ const Home = () => {
 
   // Categories aur Packages Data
   const categories = [
-    { id: "girlfriend", title: "For Girlfriend", img: "/img1.png" },
-    { id: "boyfriend", title: "For Boyfriend", img: "/img2.png" },
-    { id: "mom", title: "For Mom", img: "/img3.png" },
-    { id: "dad", title: "For Dad", img: "/img4.png" },
-    { id: "friends", title: "For Friends", img: "/img5.png" },
-    { id: "colleagues", title: "For Colleagues", img: "/img1.png" },
+    { id: "girlfriend", title: "For Girlfriend", img: "images/img1.png" },
+    { id: "boyfriend", title: "For Boyfriend", img: "images/img2.png" },
+    { id: "mom", title: "For Mom", img: "images/img3.png" },
+    { id: "dad", title: "For Dad", img: "images/img5.png" },
+    { id: "friends", title: "For Friends", img: "images/img6.jpg" },
+    { id: "colleagues", title: "For Colleagues", img: "images/img7.jpg" },
   ];
 
   const packages = [
@@ -2704,7 +2704,7 @@ const Home = () => {
       name: "Home Package",
       price: "₹499",
       details: "Cute Greeting Card, Scented Candle, Custom Message Note.",
-      img: "/img1.png",
+      img: "images/img1.png",
     },
     {
       id: "normal-pkg",
@@ -2714,18 +2714,18 @@ const Home = () => {
       img: "https://images.unsplash.com/photo-1511381939415-e44015466834?q=80&w=600&auto=format&fit=crop",
     },
     {
-      id: "luxury-pkg",
-      name: "Luxury Package",
-      price: "₹2,499",
-      details: "Customized Teddy/Watch, Imported Chocolates, Scrapbook.",
-      img: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=600&auto=format&fit=crop",
-    },
-    {
       id: "surprise-box",
       name: "Surprise Box",
       price: "₹1,499",
       details: "Mystery Customized Gift Items tailored for your loved ones.",
-      img: "https://images.unsplash.com/photo-1512909006721-3d6018887383?q=80&w=600&auto=format&fit=crop",
+      img: "images/img2.png",
+    },
+    {
+      id: "luxury-pkg",
+      name: "Luxury Package",
+      price: "₹2,499",
+      details: "Customized Teddy/Watch, Imported Chocolates, Scrapbook.",
+      img: "images/img5.png",
     },
   ];
 
@@ -2736,53 +2736,53 @@ const Home = () => {
       title: "Gift Making",
       desc: "Curated at our factory",
       icon: <Factory size={24} />,
-      img: "https://images.unsplash.com/photo-1513885535751-8b9238bd482a?q=80&w=300",
+      img: "images/img8.jpg",
     },
     {
       id: 2,
       title: "Quality Check",
       desc: "Arrives at our hub",
       icon: <ShieldCheck size={24} />,
-      img: "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?q=80&w=300",
+      img: "images/img9.jpg",
     },
     {
       id: 3,
       title: "Packaging",
       desc: "Wrapped with love",
       icon: <Box size={24} />,
-      img: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=300",
+      img: "images/img10.jpg",
     },
     {
       id: 4,
       title: "Customization",
       desc: "Adding your letter",
       icon: <Gift size={24} />,
-      img: "https://images.unsplash.com/photo-1512909006721-3d6018887383?q=80&w=300",
+      img: "images/img11.jpg",
     },
     {
       id: 5,
       title: "Out for Delivery",
       desc: "Handed to courier",
       icon: <Truck size={24} />,
-      img: "https://images.unsplash.com/photo-1559454403-b8fb88521f11?q=80&w=300",
+      img: "images/img12.jpg",
     },
     {
       id: 6,
       title: "Delivered",
       desc: "Safe at your doorstep",
       icon: <HomeIcon size={24} />,
-      img: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=300",
+      img: "images/img13.jpg",
     },
   ];
 
   // 🔥 5. Gallery Images (6 Images)
   const galleryImages = [
-    "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?q=80&w=600",
-    "https://images.unsplash.com/photo-1513885535751-8b9238bd482a?q=80&w=600",
-    "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=600",
-    "https://images.unsplash.com/photo-1512909006721-3d6018887383?q=80&w=600",
-    "https://images.unsplash.com/photo-1559454403-b8fb88521f11?q=80&w=600",
-    "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=600",
+    "images/img12.jpg",
+    "images/img7.jpg",
+    "images/img8.jpg",
+    "images/img9.jpg",
+    "images/img10.jpg",
+    "images/img11.jpg",
   ];
 
   return (
@@ -3046,7 +3046,7 @@ const Home = () => {
         </div>
       </div>
 
-      {/* TESTIMONIALS */}
+      {/* TESTIMONIALS
       <div className="bg-[#0f0f1a] py-20">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
@@ -3091,6 +3091,102 @@ const Home = () => {
       </div>
     </div>
   );
-};
+}; */}
 
+      {/* 🔥 TESTIMONIALS (5 Different Reviews) */}
+      <div className="bg-[#0f0f1a] py-20">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-black text-white">
+              Loved by Thousands
+            </h2>
+            <p className="text-gray-400 mt-2">
+              Don't just take our word for it. Here is what our customers say.
+            </p>
+          </div>
+
+          {/* Grid layout for 5 reviews (3 on top, 2 on bottom centered) */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              {
+                name: "Rahul Sharma",
+                initial: "R",
+                city: "Thane",
+                review:
+                  "Bhai, gift bahut hi premium tha. Meri girlfriend bahut khush hui. Packaging dekh kar hi dil khush ho gaya. Thanks MysticBox!",
+                color: "bg-pink-500",
+              },
+              {
+                name: "Priya Desai",
+                initial: "P",
+                city: "Mumbai",
+                review:
+                  "I ordered a customized hamper for my mom on Diwali. The handwritten letter was the best part. She literally cried tears of joy. Highly recommended!",
+                color: "bg-purple-500",
+              },
+              {
+                name: "Amit Patil",
+                initial: "A",
+                city: "Navi Mumbai",
+                review:
+                  "Corporate gifting ke liye inka bulk order option bahut helpful tha. Delivered 50 boxes to my office in just 2 days. Quality was top-notch.",
+                color: "bg-blue-500",
+              },
+              {
+                name: "Sneha Kulkarni",
+                initial: "S",
+                city: "Thane",
+                review:
+                  "Same day delivery ka option bahut kaam aaya. Last minute pe order kiya aur time pe deliver ho gaya. Surprise perfectly executed!",
+                color: "bg-green-500",
+              },
+              {
+                name: "Vikram Singh",
+                initial: "V",
+                city: "Mumbai",
+                review:
+                  "The COD option made me trust them initially. But the product quality and the personalized letter made me a permanent customer. Great work team!",
+                color: "bg-orange-500",
+              },
+            ].map((testimonial, index) => (
+              <div
+                key={index}
+                className="bg-[#1a1a2e] p-6 rounded-2xl border border-white/10 hover:border-pink-500/30 transition duration-300 flex flex-col justify-between"
+              >
+                <div>
+                  <div className="flex text-yellow-400 mb-4">
+                    <Star size={16} fill="currentColor" />
+                    <Star size={16} fill="currentColor" />
+                    <Star size={16} fill="currentColor" />
+                    <Star size={16} fill="currentColor" />
+                    <Star size={16} fill="currentColor" />
+                  </div>
+                  <p className="text-gray-300 mb-6 italic text-sm leading-relaxed">
+                    "{testimonial.review}"
+                  </p>
+                </div>
+
+                <div className="flex items-center gap-3 mt-auto">
+                  <div
+                    className={`w-10 h-10 ${testimonial.color} rounded-full flex items-center justify-center text-white font-bold shadow-md`}
+                  >
+                    {testimonial.initial}
+                  </div>
+                  <div>
+                    <p className="text-white font-bold text-sm">
+                      {testimonial.name}
+                    </p>
+                    <p className="text-gray-500 text-xs">
+                      Verified Buyer • {testimonial.city}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 export default Home;
