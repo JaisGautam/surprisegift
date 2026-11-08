@@ -438,7 +438,7 @@ export const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link to="/shop" className="hover:text-pink-600 transition">
+              <Link to="/packages" className="hover:text-pink-600 transition">
                 Shop Gifts
               </Link>
             </li>
