@@ -421,9 +421,9 @@ export const Footer = () => {
             <p>
               MysticBox Gifts,
               <br />
-              Wagle Estate, Thane West,
+              Manorma Nagar , Thane West,
               <br />
-              Maharashtra - 400604, India
+              Maharashtra - 400607, India
             </p>
           </div>
         </div>
