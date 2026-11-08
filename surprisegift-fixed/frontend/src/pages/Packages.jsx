@@ -261,16 +261,31 @@ export default function Packages() {
 
   const relationIds = relationPackages[relation.toLowerCase()];
 
-  const filtered = useMemo(
-    () =>
-      PACKAGES.filter(
+  // const filtered = useMemo(
+  //   () =>
+  //     PACKAGES.filter(
+  //       (item) =>
+  //         (category === "All packages" || item.category === category) &&
+  //         (!relationIds || relationIds.includes(item._id)),
+  //     ),
+  //   [category, relation],
+  // );
+
+
+
+    const filtered = useMemo(() => {
+      const filteredPackages = PACKAGES.filter(
         (item) =>
           (category === "All packages" || item.category === category) &&
           (!relationIds || relationIds.includes(item._id)),
-      ),
-    [category, relation],
-  );
+      );
 
+      // 🔥 Price ke hisaab se sort karein (Kam se zyada)
+      return filteredPackages.sort((a, b) => a.price - b.price);
+    }, [category, relation]);
+
+
+    
   const addPackage = (pkg) => {
     addToCart({
       ...pkg,

@@ -269,27 +269,6 @@ export const PACKAGES = [
     features: ["Photo Frame", "Chocolates", "LED Light"],
   },
   {
-    _id: "surprise-box",
-    name: "Surprise Box",
-    price: 1499,
-    image: "images/img3.png",
-    badge: "Mystery",
-    category: "Surprise",
-    description: "A mystery box curated based on the relationship.",
-    features: ["Mystery Items", "Custom Note", "Elegant Packaging"],
-  },
-  {
-    _id: "luxury-pkg",
-    name: "Luxury Package",
-    price: 2499,
-    image: "images/img9.jpg",
-    badge: "Premium",
-    category: "Luxury",
-    description: "An unforgettable luxury gift experience.",
-    features: ["Customized Teddy", "Imported Chocolates", "Scrapbook"],
-  },
-  // 🔥 4 Naye Packages (Unique Images)
-  {
     _id: "friendship-special",
     name: "Friendship Special",
     price: 799,
@@ -309,6 +288,17 @@ export const PACKAGES = [
     description: "Show your love to your mom with this special gift.",
     features: ["Scented Candle", "Silk Scarf", "Handwritten Letter"],
   },
+
+  {
+    _id: "surprise-box",
+    name: "Surprise Box",
+    price: 1499,
+    image: "images/img3.png",
+    badge: "Mystery",
+    category: "Surprise",
+    description: "A mystery box curated based on the relationship.",
+    features: ["Mystery Items", "Custom Note", "Elegant Packaging"],
+  },
   {
     _id: "dads-pride",
     name: "Dad's Pride",
@@ -319,6 +309,18 @@ export const PACKAGES = [
     description: "A sophisticated gift set for your dad.",
     features: ["Leather Wallet", "Premium Pen", "Chocolates"],
   },
+  {
+    _id: "luxury-pkg",
+    name: "Luxury Package",
+    price: 2499,
+    image: "images/img9.jpg",
+    badge: "Premium",
+    category: "Luxury",
+    description: "An unforgettable luxury gift experience.",
+    features: ["Customized Teddy", "Imported Chocolates", "Scrapbook"],
+  },
+  // 🔥 4 Naye Packages (Unique Images)
+
   {
     _id: "corporate-elite",
     name: "Corporate Elite",
