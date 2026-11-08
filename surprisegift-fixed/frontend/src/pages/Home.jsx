@@ -3119,7 +3119,7 @@ const Home = () => {
               {
                 name: "Priya Desai",
                 initial: "P",
-                city: "Mumbai",
+                city: "Panvel",
                 review:
                   "I ordered a customized hamper for my mom on Diwali. The handwritten letter was the best part. She literally cried tears of joy. Highly recommended!",
                 color: "bg-purple-500",
@@ -3143,7 +3143,7 @@ const Home = () => {
               {
                 name: "Vikram Singh",
                 initial: "V",
-                city: "Mumbai",
+                city: "Andheri",
                 review:
                   "The COD option made me trust them initially. But the product quality and the personalized letter made me a permanent customer. Great work team!",
                 color: "bg-orange-500",
