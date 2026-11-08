@@ -2853,29 +2853,61 @@ const Checkout = () => {
       checkDeliveryAvailability(value);
   };
 
+  // const checkDeliveryAvailability = async (pincode) => {
+  //   setCheckingPincode(true);
+  //   setIsDeliverable(true);
+  //   setError("");
+  //   try {
+  //     const allowedPincodes = [
+  //       "110001",
+  //       "110002",
+  //       "201301",
+  //       "201001",
+  //       "400601",
+  //       "400610",
+  //       "400615",
+  //     ]; // Mumbai/Thane pincodes
+  //     setTimeout(() => {
+  //       if (!allowedPincodes.includes(pincode)) {
+  //         setIsDeliverable(false);
+  //         setError("Sorry, aapka pincode hamare delivery radius se bahar hai.");
+  //       }
+  //       setCheckingPincode(false);
+  //     }, 1000);
+  //   } catch (err) {
+  //     setError("Pincode check nahi ho paya.");
+  //     setCheckingPincode(false);
+  //   }
+  // };
+
   const checkDeliveryAvailability = async (pincode) => {
     setCheckingPincode(true);
     setIsDeliverable(true);
     setError("");
+
     try {
-      const allowedPincodes = [
-        "110001",
-        "110002",
-        "201301",
-        "201001",
-        "400601",
-        "400610",
-        "400615",
-      ]; // Mumbai/Thane pincodes
+      // 🔥 Mumbai, Delhi, Varanasi ke saare pincodes ke starting digits
+      const allowedPrefixes = [
+        "400", // Mumbai (Pura Mumbai cover ho jayega)
+        "110", // Delhi (Pura Delhi cover ho jayega)
+        "221", // Varanasi (Pura Varanasi cover ho jayega)
+      ];
+
+      // Pincode ke pehle 3 akshar nikalein
+      const prefix = pincode.substring(0, 3);
+
       setTimeout(() => {
-        if (!allowedPincodes.includes(pincode)) {
+        // Agar prefix allowed list mein hai, toh deliverable hai
+        if (!allowedPrefixes.includes(prefix)) {
           setIsDeliverable(false);
-          setError("Sorry, aapka pincode hamare delivery radius se bahar hai.");
+          setError(
+            "Sorry, hum abhi sirf Mumbai, Delhi aur Varanasi mein delivery kar sakte hain.",
+          );
         }
         setCheckingPincode(false);
       }, 1000);
     } catch (err) {
-      setError("Pincode check nahi ho paya.");
+      setError("Pincode check nahi ho paya. Kripya try karein.");
       setCheckingPincode(false);
     }
   };
