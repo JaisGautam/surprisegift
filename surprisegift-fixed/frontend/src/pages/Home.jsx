@@ -2824,7 +2824,7 @@ const Home = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <button
-              onClick={() => navigate("/shop")}
+              onClick={() => navigate("/packages")}
               className="bg-pink-500 hover:bg-pink-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:shadow-pink-500/30 transition-all transform hover:-translate-y-1"
             >
               Shop Gifts
