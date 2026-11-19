@@ -24,10 +24,17 @@ export const AuthProvider = ({ children }) => {
     checkAuth();
   }, []);
 
+  // const login = async (email, password) => {
+  //   const { data } = await API.post("/auth/login", { email, password });
+  //   localStorage.setItem("token", data.token);
+  //   setUser(data.user);
+  //   return data;
+  // };
+
   const login = async (email, password) => {
     const { data } = await API.post("/auth/login", { email, password });
     localStorage.setItem("token", data.token);
-    setUser(data.user);
+    setUser(data.user); // 🔥 Yeh line hona zaroori hai
     return data;
   };
 

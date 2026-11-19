@@ -534,9 +534,8 @@ export const Footer = () => {
 
       <div className="max-w-7xl mx-auto text-center text-xs mt-12 pt-6 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center gap-4 text-gray-500">
         <p>© 2026 MysticBox Gifts. All Rights Reserved.</p>
-        <div className="flex items-center gap-1">
-          <Lock size={12} /> Secure SSL Encrypted Website
-        </div>
+        {/* 
+         */}
       </div>
     </footer>
   );
